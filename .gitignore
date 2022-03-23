@@ -1,0 +1,14 @@
+/backend/.env
+/backend/.bundle
+/backend/log/*
+/backend/tmp/*
+!/backend/log/.keep
+!/backend/tmp/.keep
+/backend/tmp/pids/*
+!/backend/tmp/pids/
+!/backend/tmp/pids/.keep
+/backend/storage/*
+!/backend/storage/.keep
+/backend.byebug_history
+/backend/config/master.key
+/backend/public/uploads
