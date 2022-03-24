@@ -121,6 +121,10 @@ GEM
     minitest (5.15.0)
     msgpack (1.4.5)
     mysql2 (0.5.3)
+    net-pop (0.1.1)
+      digest
+      net-protocol
+      timeout
     net-protocol (0.1.2)
       io-wait
       timeout
@@ -242,6 +246,7 @@ DEPENDENCIES
   listen (~> 3.3)
   mini_magick
   mysql2 (~> 0.5)
+  net-pop
   net-smtp
   pry-byebug
   pry-rails
