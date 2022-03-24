@@ -2,7 +2,6 @@ class Api::TravelSpotsController < ApplicationController
   before_action :set_travel_spot, only: %i[show update destroy]
 
   def index
-    # binding.pry
     travel_spots = TravelSpot.all
     travel_spots = travel_spots.where(genre_id: params[:genre_id]) if params[:genre_id].present?
     travel_spots = travel_spots.where(["name LIKE ?", "%#{params[:keyword]}%"]) if params[:keyword].present?
@@ -43,7 +42,7 @@ class Api::TravelSpotsController < ApplicationController
   end
 
   def rate_ranking
-    travel_spots = TravelSpot.all.sort { |a, b| b.rating <=> a.rating }
+    travel_spots = TravelSpot.all.sort { |a, b| b.rating <=> a.rating }.take(5)
     render json: travel_spots, status: :ok
   end
 
