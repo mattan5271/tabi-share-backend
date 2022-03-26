@@ -16,7 +16,7 @@ class TravelSpot < ApplicationRecord
   validates :introduction, presence: true, length: { maximum: 400 }
   validates :access, presence: true, length: { maximum: 200 }
   validates :business_hour, presence: true, length: { maximum: 100 }
-  validates :phone_number, presence: true, uniqueness: true, format: { with: /\A[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}\z/ }
+  validates :phone_number, presence: true, format: { with: /\A[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}\z/ }
   validates :parking, presence: true, length: { maximum: 300 }
   validates :home_page, length: { maximum: 100 }
 
