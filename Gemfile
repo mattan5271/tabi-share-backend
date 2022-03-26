@@ -8,6 +8,7 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem "carrierwave"
 gem "dotenv-rails"
 gem "enumerize"
+gem "fog-aws"
 gem "geocoder"
 gem "jp_prefecture"
 gem "listen", "~> 3.3"
