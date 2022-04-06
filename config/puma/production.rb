@@ -1,6 +1,5 @@
 # bind "unix://#{Rails.root.join("tmp/sockets/puma.sock")}"だとpumactlコマンドで読み込まないため絶対パスで指定
-# root_dir = "/home/ec2-user/tabi-share-v2-backend/current"
-root_dir = "/home/ec2-user/tabi-share-v2-backend"
+root_dir = "/home/ec2-user/tabi-share-v2-backend/current"
 
 max_threads_count = ENV.fetch("RAILS_MAX_THREADS", 5)
 min_threads_count = ENV.fetch("RAILS_MIN_THREADS", max_threads_count)
