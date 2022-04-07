@@ -6,4 +6,5 @@ set :branch, "main"
 set :deploy_to, "/home/ec2-user/tabi-share-v2-backend"
 set :rbenv_ruby, "3.1.0"
 set :linked_files, %w[config/master.key .env]
+set :puma_service_unit_name, "puma.service"
 append :linked_dirs, "log", "public", "tmp"
