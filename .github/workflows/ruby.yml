@@ -44,9 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
-        with:
-          ref: master
+        uses: actions/checkout@v2
       - name: Set up Ruby 3.1
         uses: ruby/setup-ruby@v1
         with:
