@@ -160,9 +160,3 @@ Style/FrozenStringLiteralComment:
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
-
-Style/PredicateName:
-  Enabled: false
-
-Style/MultilineHashBraceLayout:
-  Enabled: false
