@@ -1,7 +1,5 @@
 name: Rubocop with Reviewdog
-on:
-  - [pull_request]
-  - workflow_dispatch:
+on: [pull_request]
 jobs:
   rubocop:
     name: runner / rubocop
