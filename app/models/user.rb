@@ -5,8 +5,8 @@ class User < ApplicationRecord
   has_many :reviews, dependent: :destroy
   has_many :favorites, dependent: :destroy
   has_many :favorited_travel_spots, through: :favorites, source: :travel_spot
-  has_many :follower, class_name: "Relationship", foreign_key: "follower_id", dependent: :destroy
-  has_many :followed, class_name: "Relationship", foreign_key: "followed_id", dependent: :destroy
+  has_many :follower, class_name: "Relationship", foreign_key: "follower_id", dependent: :destroy, inverse_of: :user
+  has_many :followed, class_name: "Relationship", foreign_key: "followed_id", dependent: :destroy, inverse_of: :user
   has_many :followings, through: :follower, source: :followed
   has_many :followers, through: :followed, source: :follower
 
