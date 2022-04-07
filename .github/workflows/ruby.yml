@@ -35,7 +35,8 @@
 name: Ruby-Deploy-to-Production
 
 on:
-  branches: [main]
+  push:
+    branches: [main]
 
 jobs:
   build:
