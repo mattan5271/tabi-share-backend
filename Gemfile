@@ -30,8 +30,10 @@ group :development do
   gem "pry-byebug"
   gem "pry-rails"
   gem "rubocop", require: false
+  gem "rubocop-i18n"
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
+  gem "rubocop-rake"
   gem "rubocop-rspec"
   gem "spring"
 end
