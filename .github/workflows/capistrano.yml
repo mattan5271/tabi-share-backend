@@ -1,10 +1,8 @@
 name: Deploy with Capistrano
-
 on:
   push:
     branches: [main]
   workflow_dispatch:
-
 jobs:
   rubocop:
     name: runner / rubocop
@@ -21,7 +19,6 @@ jobs:
           rubocop_version: gemfile
           rubocop_extensions: rubocop-rails:gemfile rubocop-rspec:gemfile
           reporter: github-pr-review
-
   deploy:
     runs-on: ubuntu-latest
     steps:
