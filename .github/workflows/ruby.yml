@@ -27,4 +27,5 @@ jobs:
       - uses: miloserdow/capistrano-deploy@master
         with:
           target: production # Defines the environment that will be used for the deployment
-          deploy_key: ${{ secrets.DEPLOY_ENC_KEY }, { secrets.SSH_KEY }} # Name of the variable configured in Settings/Secrets of your github project
+          deploy_key: ${{ secrets.DEPLOY_ENC_KEY }} # Name of the variable configured in Settings/Secrets of your github project
+          deploy_key: ${{ secrets.SSH_KEY }} # 必須
