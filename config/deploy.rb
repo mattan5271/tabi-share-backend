@@ -8,6 +8,7 @@ set :rbenv_ruby, "3.1.0"
 set :linked_files, %w[config/master.key .env]
 set :puma_service_unit_name, "puma.service"
 set :ssh_options, {
+  user: "ec2-user",
   keys: %w[~/.ssh/id_rsa ~/.ssh/tabi-share-v2.pem],
   forward_agent: true,
   auth_methods: %w[publickey]
