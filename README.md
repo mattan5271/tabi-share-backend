@@ -1,3 +1,10 @@
+## URL
+バックエンド
+https://tabishare.work/
+
+フロントエンド
+https://tabi-share-frontend.vercel.app/
+
 # README
 
 This README would normally document whatever steps are necessary to get the
